@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "codingbootcamp-internship",
+  "private_key_id": "16a956acd3b485d443d44294a23d030697cc0106",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDABtpU2qy1L2IG\nWDuje1KAJc0nT98oNicqCFpOusEVu/GqT9xkqds0D8B4Q3yr+262MMPH1bzlwHjT\nVwyNP+OZ4Dm+Teiio+jYI+JholDynd0hNDf4FYNE15qa+PeX5fDnPdTL4Mn8a7VE\nJos+JdR7Z1W243zcD3Ktn6yFScNr0fzLAUehqNi/H1Be1uvywCjyc2Wxs7waQ9eM\nVajQX7T58Ioza69x2wEcAZCeJoEfHoYA41P8RNKNQ5rrsbIRecu8bEqqEM5WxHHs\ndjYDNJDI/8Lfn7k5E/raFjemgYJKtUr2GLYLaPQf5/xCUg3xwvq6KTVQEGHAwEfN\nDgP5EXIjAgMBAAECggEAChbSFdnqGm2Y5Y3Gjw+wWqdMdh+jhptXHMWU6RoK1wzU\nOlyOedjVeZDHo19NskONoj5Bqxg3H+MoS1esLdJeL6bbodIPbQGA/wozn2mbKIQp\ngCXG4wlOUlRO/TbOMMmWCgWc+UagQNuaidrJ6hlWu/0b6yCyCLs5t+xHG4xam37f\nlHnNMyC4+zLOCgeoQ8BoDymdX1RI58307rwu84y4fvoQ2rpd72Kn+3+bEBQEuik8\naaSVVZ8Q/+7UZGsrmSFRomfmSrQ2ZHz8eVMHJ+AdTc2VBbBVznj//mEFoWzVybQw\nMKxyFWb+i++JebzQjTLW9SBb8ig+Se6s8JqUk/B0gQKBgQDvI65gFgdIyfY5BaLn\nGlqKlaNZBOrsvS2l2/nJWIq/A/lGinhHDFT8Z7YJIUanWRZLWAKEmrYquAefZPqR\nPZJegi+63WYyZIMXR2xfEDz68f4if1mO9H1AbEWuvA3mnRSD9w+yaR7FeBYxHf9s\ni8U8A23fqiGDSzszxKKoIr/o4QKBgQDNkNFquQmwYO3rH+E5eiALVktgHug3ZIG+\nWck8OQ7l7KfTPQ630S7VAwisu/BlFe7CjKbL8igC26QLJTSGXOGez/SkOYWaKNKB\nlEXs8CWK/cyH/rrHLaFM42en6O4XM8BCMuHAolu7WWcGrE5L/3zdsa1tJyIijCYM\nTgsdscMngwKBgQC71Ae7WrH//vlREldAM5fX7+5sFgu7RF+dPWk1N0FLBQD+4fXU\nwB/kXEVDaIqJGNUE+qyHoMjiRsdd779K4tSbPJ/mos0JWZ8JYsUA6c0rwXS9fc9H\nFEtolWIp+3TjpI8fk6cVl7FeopKzo38ir6mMGJltKsDF0go+//xOGXUooQKBgCxQ\ne9S17xDG1INLbBIn8aCACd++yfCnChEu6eLBqiSGz+cJ0pJt1dq1vLkACuK/x6jJ\nCWwN1/JFxydf7eLJQxopWmPMwrBo/HhSroBVhMJh1CW9FCa7/3nDzCS2Yh0+WsPq\nlCAi4AOTUlJt8rMPcKuaEfjl5sXr0If2iw7rs1ZhAoGAD+mMjkvLTTQgUhFSCLcB\nQOLjlzanEEWakDwbQJUkEjmH5UZBoZcphry4ZZtZS6OCNSDNey/mxwN4Jx6NfWEC\n+YOPNNqOvzi3glPZtEqKJrU1Zoku9UVO7xExh52j68v4qcbwPvM+m9GXwlumhobW\n+NWu2KbKn0F11MA6RMLEmVQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "googledrive@codingbootcamp-internship.iam.gserviceaccount.com",
+  "client_id": "113556341838693649465",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googledrive%40codingbootcamp-internship.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
