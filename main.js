@@ -1,11 +1,11 @@
 "use strict"
 
-require('dotenv').config();  // Import dotenv module
-const axios = require('axios');  // Import axios module
+// Import modules
+require('dotenv').config();  
+const axios = require('axios');  
+const screenshotmachine = require('screenshotmachine');   
+const { google } = require('googleapis'); 
 
-// Declaring constants
-const screenshotmachine = require('screenshotmachine');   // Import screenshotmachine module
-const { google } = require('googleapis');  // Import googleapis module
 const secretPhrase = ''; // Secret phrase is empty but needed to generate the screenshots' url
 
 
@@ -17,10 +17,14 @@ const webSites = { // Dictionary with different websites' url as values and the 
     '5_Realty Mogul': 'https://www.realtymogul.com'
 };
 
+
+// Returns the screenshot uploaded to google drive;
+
 async function uploadImageToDrive(dictKey, aScreenshotUrl) {
     const fileName = `${dictKey}.jpg`;
 
     try {
+        // Authentification to google drive
         const auth = new google.auth.GoogleAuth({
             keyFile: './googlekey.json',
             scopes: ['https://www.googleapis.com/auth/drive']
@@ -36,7 +40,7 @@ async function uploadImageToDrive(dictKey, aScreenshotUrl) {
             'parents': [process.env.GOOGLE_API_FOLDER_ID]
         };
 
-        // Download the screenshot from the URL
+        // GET request to download the screenshot from the URL
         const response = await axios.get(aScreenshotUrl, { responseType: 'stream' });
 
         const media = {
@@ -44,6 +48,7 @@ async function uploadImageToDrive(dictKey, aScreenshotUrl) {
             body: response.data
         };
 
+        // Upload the image to Google Drive
         const uploadResponse = await driveService.files.create({
             resource: fileMetaData,
             media: media,
@@ -51,14 +56,16 @@ async function uploadImageToDrive(dictKey, aScreenshotUrl) {
         });
 
         return uploadResponse.data.id;
-    } catch (err) {
+    }
+    catch (err) { // Display an error if the upload on Google Drive cannot be done
         console.log('Upload failed:', err);
     }
 }
 
-
+// Loop through the websites and upload screenshots to Google Drive
 for (let key in webSites) {
     let options = {
+
         // Mandatory parameters
         url: webSites[key],
 
@@ -70,9 +77,10 @@ for (let key in webSites) {
         zoom: '100'
     }
 
-
+    // Create the url to the screeshot for the current website
     let screenshotUrl = screenshotmachine.generateScreenshotApiUrl(process.env.customerKey, secretPhrase, options);
 
+    // Call the function to upload the image to the drive
     uploadImageToDrive(key, screenshotUrl).then(data => {
         console.log(`Screenshot ${data} successfully imported to Google Drive.`)
     });
